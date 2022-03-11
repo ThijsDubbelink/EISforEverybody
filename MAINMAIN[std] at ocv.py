@@ -20,7 +20,7 @@ import matplotlib.cm as cm
 import math
 
 dupl = 2
-pth = r'C:\Users\Laptop27\Documents\EISData\PT-TUDelft-07'
+pth = r'' # filelocation of .mpt data
 savepth = pth
 obj = GDRT_Lib.Import(pth, ext='.mpt')
 obj.Filtercyceis(2e5)
