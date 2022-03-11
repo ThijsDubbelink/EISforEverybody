@@ -34,7 +34,7 @@ plts = []
 fig, (ax1,ax2) = plt.subplots(1, 2, figsize=(18,9))
 dfexp = pd.DataFrame()
 for bat in range(obj.n):
-    lg = 1e-7 * obj.AA[bat]
+    lg = 1e-7
     cg = 0.2
 
     dfbat = pd.DataFrame()
