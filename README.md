@@ -6,7 +6,7 @@ This repository contains the following files.
 - calculate_EIS.py
 - MAINMAIN file
 
-Import.py
+# Import.py
 creates import object with:
 - list of filenames self.LOF
 - list of dataframes self.DFL 
@@ -14,7 +14,7 @@ creates import object with:
 A .mpt biologic file is used for importing.
 Furthermore it filters the cyclenumbers and specifies whether a row contains an EIS measurement.
 
-TR_DRT.py
+# TR_DRT.py
 - Tikhonov regularization is used to obtain the DRT.
 - Uses a circuit like -l-R_inf-(DRT)-C to fit the EIS data. 
 - l has a fixed value specified in the MAINMAIN file. e.g. 1e-7
@@ -31,14 +31,14 @@ Physical interpretation of the following components may be interpreted as:
 
 TR_DRT.py was inspired by the DRT libraries of https://github.com/ciuccislab
 
-calcrq.py
+# calcrq.py
 - Use scipy.optimize's curve_fit to Calculate R, time constant τ0, φ from the obtained DRT (gammaRC) of TR_DRT.py according to equation 4 of the following paper:
 Distribution (function) of relaxation times, successor to complex nonlinear least squares analysis of electrochemical impedance spectroscopy? by Bernard A Boukamp et al.
 
-calculate_EIS.py
+# calculate_EIS.py
 - Calculate Z_real and Z_imag from gammaRC
 - this function can be used to visually inspect goodness of fit
 
-MAINMAIN[std] at ocv.py
+# MAINMAIN[std] at ocv.py
 
 This is an example how the above mentioned files can be used to analyze a dataset of EIS data.
