@@ -54,3 +54,6 @@ This is an example how the above mentioned files can be used to analyze a datase
 - The dashed line shows the sum of the individual fits.
 - The solid dots is the DRT data.
 
+# csv output file fitted parameters
+- furthermore the MAINMAIN script will output a csvfile with all the parameters and corresponding errors from the DRT and R_inf.
+[EISAnalysis.csv](https://github.com/ThijsDubbelink/EISforEverybody/files/8233162/EISAnalysis.csv)
